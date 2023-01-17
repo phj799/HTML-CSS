@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equit="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOCUMENT</title>
+    <style>
+      #body{
+        height: 1200px;
+      }
+      div{
+        border: 1px solid black;
+      }
+      .test1{
+        position: fixed;
+        /* fixed
+          3차원 요소로 동작
+          width가 따로지정하지 않으면 inline처럼 줄어듦
+          -> width를 명시해야함 width: 100%;
+        */
+        /* top, left, right, bottom을 붙일 수 있다. bottom: 10px; right: 10px;*/
+        bottom: 10px;
+        right: 10px;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <!-- 기본값 div -->
+    <!-- #container>div*2 -->
+    <div id="body">
+      <div class="test1">test1</div>
+      <div class="test2">test2</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equit="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOCUMENT</title>
+    <style>
+      *{
+        margin: 0px;
+      }
+      div{
+        border: 1px solid black;
+        height: 50px;
+        width: 200px;
+      }
+      body{
+        height: 1200px;
+        border: 1px solid black;
+      }
+      .header-wrapper{
+        height: 150px;
+        display: flex;
+        justify-content: space-around; /* space-between */
+        align-items: center;
+        border-bottom: 1px solid black;
+        position: fixed;
+        width: 100%;
+      }
+      .menu-wrapper{
+        display: flex;
+        /* margin-left: 20px; */
+      }
+      .login-wrapper{
+        display: flex;
+        /* margin-right: 20px; */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- div>div*3 -->
+    <div class="header-wrapper">
+      <div class="menu-wrapper">
+        <!-- div*3 -->
+        <div>메뉴1</div>
+        <div>메뉴2</div>
+        <div>메뉴3</div>
+      </div>
+      <h1>logo</h1>
+      <div class="login-wrapper">
+        <div>회원가입</div>
+        <div>로그인</div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equit="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css기초.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .container{
+        position: relative;
+        background-image: url("./dry.jpg");
+        background-size: cover;
+        border-radius: 5%;
+        height: 500px;
+        width: 300px;
+        z-index: 1;
+      }
+      .play{
+        position: absolute;
+        background-image: url("play-button.png");
+        background-size: cover;
+        width: 50px;
+        height: 50px;
+        right: 50%;
+        top: 35%;
+        z-index: 2;
+        transform: translateY(50%) translateX(50%);
+      }
+      .heukhistory{
+        position: absolute;
+        background-image: url("heukhistory.png");
+        background-size: cover;
+        height: 120px;
+        width: 200px;
+        right: 50%;
+        top: 50%;
+        z-index: 2;
+        transform: translateY(50%) translateX(50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="play"></div>
+      <div class="heuk"></div>
+    </div>
+  </body>
+</html>
