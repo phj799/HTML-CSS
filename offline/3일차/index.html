@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>안녕 나는 자룡이</h1>
+    <div class="container">
+      <div class="img-wrapper">
+        <img src="./jony.jpg" alt="자룡이"  height="300px"; />
+      </div>
+      <div class="hobby-list">
+        <h2>취미목록</h2>
+        <ul>
+          <li>영화보기</li>
+          <li>코딩하기</li>
+          <li>산책가기</li>
+          <li>게임하기</li>
+          <li>등산가기</li>
+        </ul>
+      </div>
+      <div class="jog-list">
+        <h2>직업목록</h2>
+        <ul>
+          <li>경비원</li>
+          <li>요리사</li>
+          <li>웹툰작가</li>
+          <li>동영상편집자</li>
+          <li>웹개발자</li>
+        </ul>
+      </div>
+    </div>
+    <script>
+      const img = document.querySelector("body > div > div.img-wrapper > img");
+      img.src = "./profile.jpg"  
+      // 이 예제에선 img가 하나뿐이므로 그냥
+      // ".img-wrapper > img" 또는 "img"로 축약가능!
+      // querySelector는 Call by Reference
+      // 아래처럼 사용도 가능
+      // const imgWrapper = document.querySelector("body > div > div.img-wrapper");
+      // const img = imgWrapper.querySelector(img);
+      // img.src = "./profile.jpg" 
+      
+      // > 는 바로 밑에 자식을 찾을 때, 공백으로 두면 하위 DOM 전체에서 찾음
+      const li1 = document.querySelectorAll(".hobby-list > ul > li");
+      console.log(li1);
+      const li2 = document.querySelectorAll(".jog-list li");
+      console.log(li2);
+      // All로 불러오면 인덱스에 주의
+      document.querySelectorAll(".hobby-list li")[0].textContent = "하하하";
+
+      // console.dir(img);
+      // console.log(img);
+      // img.src = "./progile.jpg"
+    </script>
+  </body>
+</html>
+
+

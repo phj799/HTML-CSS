@@ -1,0 +1,52 @@
+<!-- Id 및 password가 공백일때 회원가입 방지하기 -->
+<html>
+  <head>
+    <title>회원가입 검사하기</title>
+  <style>
+    div{
+      border : 1px solid black;
+    }
+    .container {
+      display : flex;
+      flex-direction: column;
+      height: 300px;
+      width: 200px;
+      margin: 20 auto;
+      padding: 20px;
+      justify-content: space-around;
+    }
+
+    input {
+      height : 50px;
+      width: 150px;
+      margin-left: 25px;
+    }
+    button { 
+      height : 50px;
+      width: 150px;
+      margin-left: 25px;
+      
+    }
+  </style>
+  </head>
+<body>
+  <div class = "container">
+    <input class = "id-input" type ="text" placeholder = "아이디"></input>
+    <input class = "pw-input" type ="text" placeholder = "비밀번호"></input>
+    <button>회원가입하기</button>
+  </div>
+
+  <script>
+    const userId = document.querySelector(".id-input");
+    const userPass = document.querySelector(".pw-input");
+    const userSign = document.querySelector("button");
+
+    userSign.addEventListener("click", function () {
+      if (userId.value === "" || userPass.value === "") {
+        return;
+      }
+      alert("회원가입성공");
+    });
+  </script>
+</body>
+</html>

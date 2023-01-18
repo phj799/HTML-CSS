@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .font-red {
+        color: red;
+      }
+      .font-blue {
+        color: blue;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>classList</h1>
+    <button class="btn_red">Add버튼 - 빨간색</button>
+    <button class="btn_blk">Remove버튼 - 검은색</button>
+    <button class="btn_tog">Toggle버튼</button>
+    <button class="btn_con">Contain버튼</button>
+    <button class="btn_rpl">Replace버튼</button>
+
+    <script>
+      const h1 = document.querySelector("h1");
+      const btnRed = document.querySelector(".btn_red");
+      const btnBlk = document.querySelector(".btn_blk");
+      const btnTog = document.querySelector(".btn_tog");
+      const btnCon = document.querySelector(".btn_con");
+      const btnRpl = document.querySelector(".btn_rpl");
+
+      btnRed.addEventListener("click", function () {
+        h1.classList.add("font-red");
+        h1.classList.remove("font-blue");
+      });
+
+      btnBlk.addEventListener("click", function () {
+        h1.classList.remove("font-red");
+      });
+
+      btnTog.addEventListener("click", function () {
+        h1.classList.toggle("font-red");
+      });
+
+      btnCon.addEventListener("click", function () {
+        const flag = h1.classList.contains("font-red");
+        console.log(flag);
+      });
+
+      btnRpl.addEventListener("click", function () {
+        h1.classList.replace("font-red", "font-blue");
+      })
+
+    </script>
+  </body>
+  
+</html>
