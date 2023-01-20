@@ -57,7 +57,7 @@ searchInput.addEventListener('keyup', function (e) {
 
     // 새창으로 열기
     // window.open
-    // <a hrdf="" target= "_blank">새창으로 열기 </a>
+    // <a href="" target= "_blank">새창으로 열기 </a>
     // window.open(googleSearch+e.target.value, "_blank")
 
   }

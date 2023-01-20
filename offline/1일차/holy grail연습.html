@@ -2,8 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equit="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <style>
       * {
         border: 1px solid black;
@@ -14,61 +15,56 @@
         display: flex;
         flex-direction: column;
       }
-      .col1 {
+      .header {
         flex: 1;
       }
-      .col2 {
-        flex: 20;
+      .outercenter {
         display: flex;
         flex-direction: row;
-      }
-      .col3 {
-        flex: 1;
-      }
-      .row1 {
-        flex: 1;
-      }
-      .row2 {
-        flex: 5;
-        display: flex;
-        flex-direction: column;
-      }
-      .row3 {
-        flex: 1;
-      }
-      .in_col1 {
-        flex: 1;
-      }
-      .in_col2 {
-        flex: 1;
-      }
-      .in_col3 {
         flex: 20;
       }
-      .in_col4 {
+      .outerfooter {
         flex: 1;
       }
-
-
+      .nav {
+        flex: 1;
+      }
+      .innercenter {
+        display: flex;
+        flex-direction: column;
+        flex: 5;
+      }
+      .aside {
+        flex: 1;
+      }
+      .section {
+        flex: 1;
+      }
+      .innerheader {
+        flex: 1;
+      }
+      .innermain {
+        flex: 20;
+      }
+      .innerfooter {
+        flex: 1;
+      }
     </style>
-    <title>Document</title>
   </head>
   <body>
     <div class="container">
-      <div class="col1">header</div>
-      <div class="col2">
-        <div class="row1">nav</div>
-        <div class="row2">
-          <div class="in_col1">section</div>
-          <div class="in_col2">header</div>
-          <div class="in_col3">main</div>
-          <div class="in_col4">footer</div>
+      <div class="header">1</div>
+      <div class="outercenter">
+        <div class="nav">2</div>
+        <div class="innercenter">
+          <div class="section">3</div>
+          <div class="innerheader">4</div>
+          <div class="innermain">5</div>
+          <div class="innerfooter">6</div>
         </div>
-        <div class="row3">aside</div>
+        <div class="aside">7</div>
       </div>
-      <div class="col3">footer</div>
-        
-
-      </div>
+      <div class="outerfooter">8</div>
     </div>
   </body>
+</html>
