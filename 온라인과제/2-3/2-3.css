@@ -1,0 +1,34 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 1px solid green;
+}
+
+.board {
+  border: 2px solid black;
+  width: 800px;
+  height: 800px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.twobytwo {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.white {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+.black {
+  background-color: black;
+  width: 100px;
+  height: 100px;
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      /* border: 1px solid black; */
+      padding: 0px;
+      margin: 0px;
+    }
+    
+    span {
+      font-weight: 1000;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      width: 380px;
+    }
+
+    .header {
+      display: flex;
+      flex-direction: row;
+      background-color: black;
+      justify-content: space-between;
+      align-items: center;
+      height: 50px;
+    }
+
+    .logoimg img{
+      height: 50px
+    }
+
+    .main {
+      margin: 5px;
+    }
+
+    .banner {
+
+    }
+
+    .banner img{
+      width: 100%;
+      
+    }
+
+    .headwrite {
+      font-size: 130%;
+    }
+    
+    .article {
+      background-color: rgb(241, 241, 241);
+      padding-bottom: 10px;
+    }
+
+    .artmain {
+      margin-top: 10px;
+    }
+    
+    .artfooter {
+      display: flex;
+      flex-direction: row;
+      height: 30px;
+      align-items: center;
+      margin-top:10px;
+      justify-content: space-evenly;
+    }
+
+    .artfooter img{
+      height: 100%;
+    }
+
+    .benefit {
+      margin: 2px;
+      margin-top: 10px;
+    }
+
+    .bene1 {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .bene1 img{
+      background-color: white;
+    }
+
+    .bene2 {
+      margin-top: 5px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .bene2 img{
+      background-color: white;
+    }
+
+    .bene3 {
+      margin-top: 5px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .bene3 img{
+      background-color: white;
+    }
+    
+    .bluebar {
+      background-color: skyblue;
+      height: 5px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="logoimg">
+      <img src="./images/ssafy_logo.png">
+    </div>
+    <div class="menubar">
+      <img src="./images/hamburger_btn.png">
+    </div>
+  </div>
+  <div class="main">
+    <div class="banner">
+      <img src="./images/ssafy_banner.png">
+    </div>
+    <div class="headwrite">
+      삼성청년 SW아카데미<br>
+      <span>대한민국 SW의 미래를</span> 이끕니다.
+    </div>
+    <div class="article">
+      <div class="artmain">
+        <span>삼성의 SW 교육 경험과 고용노동부의 취업 지원 노하우를 바탕으로,
+          취업 준비생에게 SW역량 향상 교육 및 다양한 취업지원 서비스를 
+          제공하여 취업에 성공하도록 돕는 프로그램입니다
+        </span><br><br>
+        본 교육과정은 삼성이 주관하고 고용노동부가 후원하며, 아이들과
+        미래재단이 함께합니다.<br>
+        (교육운영은 멀티캠퍼스에서 위탁 실시)<br>
+        <div class="artfooter">
+          <span>주관</span>
+          <img src="./images/multicampus_logo.png">
+          <span>후원</span>
+          <img src="./images/mob_logo_moel.png">
+        </div>
+      </div>
+      <div class="benefit">
+        <div class="bene1">
+          <img src="./images/happling.png">
+          <span>최고의 교육</span>
+          <div class="bluebar"></div>
+        </div>
+        <div class="bene2">
+          <img src="./images/happlossom.png">
+          <span>맞춤형 교육</span>
+          <div class="bluebar"></div>
+        </div>
+        <div class="bene2">
+          <img src="./images/happlower.png">
+          <span>자기주도적 교육</span>
+          <div class="bluebar"></div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+</body>
+</html>

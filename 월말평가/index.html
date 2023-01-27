@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      border: 1px solid gray;
+    }
+
+    .container {
+      width: 700px;
+      height: 650px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: lightgrey;
+      border: 1px solid gray;
+    }
+
+    .headerKFC {
+      margin-left: 295px;
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      height: 30px;
+      margin: 20px;
+    }
+
+    .bgimg {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: midnightblue;
+    }
+
+    .menupan {
+      margin-left: 10px;;
+      font-weight:bolder;
+    }
+
+    .firebg {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .firebgimg {
+      width: 100px;
+      height: 190px;
+    }
+
+    .firebginfo {
+      display: flex;
+      flex-direction: column;
+      width: 250px;
+      margin-left: 5px;
+    }
+
+    .firebgheader{
+      display: flex;
+      flex-direction: row;
+      background-color: midnightblue;
+      color: white;
+      margin: 3px;
+    }
+
+    .fireheader{
+      margin-left: 50px;
+    }
+
+    .firebgmain1{
+      margin-left: 70px;
+    }
+
+    .firebgmain2{
+      margin-left: 30px;
+    }
+
+
+
+    .degdabg {
+      margin-top: 50px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+    }
+
+    .degdabgimg {
+      width: 100px;
+      height: 190px;
+      margin-left: 5px;
+    }
+
+    .degdabginfo {
+      display: flex;
+      flex-direction: column;
+      width: 250px;
+    }
+
+    .degdabgheader{
+      display: flex;
+      flex-direction: row;
+      background-color: midnightblue;
+      color: white;
+      margin: 3px;
+    }
+
+    .degdaheader{
+      margin-left: 40px;
+    }
+
+    .degdabgmain1{
+      margin-left: 70px;
+    }
+
+    .degdabgmain2{
+      margin-left: 40px;
+    }
+
+
+    .puppy1 {
+      height: 200px;
+      border: 10px solid black;
+      box-shadow: 5px 5px 10px 1px;
+      position: relative;
+      z-index: 1;
+      margin-left:50px;
+      margin-top:50px;
+    }
+
+    .puppy2 {
+      height: 200px;
+      border: 10px solid black;
+      box-shadow: 5px 5px 10px 1px;
+    }
+
+    .newcircle {
+      height: 100px;
+      width: 100px;
+      position: absolute;
+      border-radius: 50%;
+      background: rgb(255, 208, 0);
+      border: 5px solid black;
+      z-index: 2;
+      
+    }
+
+    .new {
+      padding: 10px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h2 class="headerKFC">KFC World</h2>
+    </header>
+    <article>
+      <span class="menu">
+        <img class="bgimg" src="hamburgerimage.png">
+        <span class="menupan">메뉴판</span>
+      </span>
+      <span class="firebg">
+        <img class="firebgimg" src="hamburgerphoto.jpg">
+        <div class="firebginfo">
+          <div class="firebgheader">
+            <h2 class="fireheader">Fire Bugger</h2>
+          </div>
+          <span>
+            <h4 class="firebgmain1">맵지 않습니다.</h4>
+            <h4 class="firebgmain2">다만 뜨거운 불타는 버거</h4>
+          </span>
+        </div>
+      </span>
+      <span class="degdabg">
+        <div class="degdabginfo">
+          <div class="degdabgheader">
+            <h2 class="degdaheader">Degda Bugger</h2>
+          </div>
+          <span>
+            <h4 class="degdabgmain1">하나의 가격으로</h4>
+            <h4 class="degdabgmain2">3개의 버거를 먹는 재미</h4>
+          </span>
+        </div>
+        <img class="degdabgimg" src="hamburgerthree.jpg">
+      </span>
+    </article>
+  </div>
+
+  <span class="problem3">
+    <div class="newcircle">
+      <h1 class="new">NEW</h1>
+    </div>
+    <img class="puppy1" src="puppy1.jpg">
+    <img class="puppy2" src="puppy2.jpg">
+  </span>
+</body>
+</html>
