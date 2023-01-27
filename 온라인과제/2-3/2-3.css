@@ -1,11 +1,10 @@
 * {
   margin: 0px;
   padding: 0px;
-  border: 1px solid green;
 }
 
 .board {
-  border: 2px solid black;
+  border: 3px solid black;
   width: 800px;
   height: 800px;
   display: flex;
@@ -24,7 +23,6 @@
 .white {
   width: 100px;
   height: 100px;
-  background-color: red;
 }
 
 .black {
