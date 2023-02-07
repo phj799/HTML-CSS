@@ -17,22 +17,21 @@
     */
     
     // 아래에 Monster 와 Snake class를 생성합니다.
-    const options = {name:''};
     class Monster {
-      constructor(health = 100, options) {
-        this.health = health;
-        this.options = options;
-      }
+        constructor(health, options) {
+            this.health = health;
+            this.options = options;
+        }
     }
 
-    class Snake extends Monster {
-      constructor(health, options) {
-        super(health, options);
-      }
+    class Snake extends Monster{
+        constructor(options) {
+            super(100, options)
+        }
 
-      bite(snake) {
-        snake.health -= 10;
-      }
+        bite(bam) {
+            bam.health -= 10;
+        }
     }
 
 
