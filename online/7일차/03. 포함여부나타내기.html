@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>배열</div>
+    <input type="text" id="array" />
+    <div>포함 되었는지 확인할 값</div>
+    <input type="text" id="val" />
+    <br />
+    <button>결과</button>
+
+    <script>
+      const btn = document.querySelector("button");
+
+      btn.addEventListener("click", () => {
+        let flag = false;
+        let arr = document.getElementById("array").value;
+        let val = document.getElementById("val").value;
+
+        arr.split(",").forEach((value) => {
+          if (value == val) flag = true;
+        });
+
+        if (flag) {
+          const div = document.createElement("div");
+          div.textContent = "포함";
+          document.querySelector("body").append(div);
+        } else {
+          const div = document.createElement("div");
+          div.textContent = "미포함";
+          document.querySelector("body").append(div);
+        }
+      });
+    </script>
+  </body>
+</html>
